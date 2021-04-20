@@ -22,33 +22,6 @@
               <base-btn text color="white" small to="/signup">Signup</base-btn>
             </div>
           </v-toolbar>
-          <v-row justify="center" align="center" style="height: 40em">
-            <v-col cols="12" md="5" class="text-center text-md-left">
-              <h2 class="font-weight-light mb-5">
-                The BLOG where you find,
-                <br /><strong>ALL TYPE BLOGS</strong>
-              </h2>
-              <p>
-                <strong>It's Lit</strong> is an ultimate Blog for small users,
-                large clients, sellers, buyers, consumers, families, kids,
-                bloggers, food lovers and everyone :)
-              </p>
-              <base-btn
-                large
-                color="white"
-                elevation="0"
-                class="font-weight-bold view-bakery-products-btn"
-                outlined
-                @click="scrollToPosts"
-              >
-                View Blog Posts
-                <v-icon class="ml-1">mdi-arrow-right</v-icon>
-              </base-btn>
-            </v-col>
-            <v-col cols="12" md="5">
-              <img class="header-image" src="/assets/svgs/header.svg" />
-            </v-col>
-          </v-row>
         </v-container>
       </v-col>
     </v-row>
