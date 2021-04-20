@@ -97,14 +97,6 @@
           <strong>
             © {{ new Date().getFullYear() }}
             <router-link to="/">&nbsp;It's Lit</router-link>
-          </strong>
-          <br />Designed by
-          <a
-            href="https://www.upwork.com/freelancers/~01d6585638be81082c"
-            target="_blank"
-          >
-            <strong class="white--text">Usman Dev</strong>
-          </a>
         </v-col>
       </v-row>
     </v-footer>
