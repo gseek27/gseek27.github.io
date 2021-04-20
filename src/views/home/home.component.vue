@@ -110,7 +110,7 @@
 }
 .blog-card-container {
   &:hover .blog-card:not(:hover) {
-    filter: blur(15px);
+    
   }
   .blog-card {
     transition: all 0.2s ease-in-out !important;
