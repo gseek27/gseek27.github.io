@@ -108,6 +108,7 @@
     }
   }
 }
+.blog-card-container {
   .blog-card {
     transition: all 0.2s ease-in-out !important;
     &:hover {
