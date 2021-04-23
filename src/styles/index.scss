@@ -3,10 +3,10 @@
 @import 'classes/height-width.scss';
 @import 'classes/position.scss';
 
-$primary: #727cf5;
-$accent: #f8f8ff;
+$primary: #00cfbe;
+$accent: #ccfae5;
 
-$app-bg-gradient: linear-gradient(135deg, #8f75da 0, #727cf5 60%);
+$app-bg-gradient: linear-gradient(135deg, #ccfae5 0, #00cfbe 60%);
 
 .theme--light.v-application {
   background: $accent !important;
