@@ -47,7 +47,7 @@
               :key="i"
             >
               <blog-post-card-component
-                :class="i % 2 === 0 ? 'primary' : 'secondary'"
+                :class="i % 2 === 0 ? 'primary' : 'primary'"
                 :post="post"
               />
             </v-col>
