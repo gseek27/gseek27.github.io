@@ -5,7 +5,7 @@
         <v-container class="px-10">
           <v-toolbar flat color="transparent" dark>
             <v-toolbar-title>
-              <router-link to="/" class="white--text font-weight-bold">
+              <router-link to="/" class="font-weight-bold" text color="#727cf5">
                 It's Lit
               </router-link>
             </v-toolbar-title>
