@@ -68,7 +68,7 @@
         <v-col cols="12" class="py-5">
           <strong>
             © {{ new Date().getFullYear() }}
-            <router-link to="/">&nbsp;It's Lit</router-link>
+            <router-link to="/">&nbsp;🔥 It's Lit!</router-link>
         </v-col>
       </v-row>
     </v-footer>
