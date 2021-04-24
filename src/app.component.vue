@@ -1,7 +1,9 @@
 <template>
   <v-app>
     <v-overlay z-index="999" :value="LoaderService.FullScreenLoader">
-      <h1>{{ LoaderService.FullScreenLoaderMessage }}</h1>
+      <h1>
+        {{ LoaderService.FullScreenLoaderMessage }}
+      </h1>
     </v-overlay>
     <v-progress-linear
       indeterminate
