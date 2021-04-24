@@ -6,7 +6,7 @@
           <v-toolbar flat color="transparent" dark>
             <v-toolbar-title>
               <router-link to="/" class="font-weight-bold" text color="#727cf5">
-              🔥 It's Lit!
+             🔥 It's Lit!
               </router-link>
             </v-toolbar-title>
             <v-spacer />
