@@ -30,8 +30,7 @@
         <v-col cols="12">
           <div class="d-flex justify-space-between align-center mb-10">
             <div>
-              <h1 class="primary--text" id="latest-posts">Latest Posts</h1>
-              <p>These are the latest posts by all users</p>
+              <h1 class="primary--text" id="latest-posts">Home Timeline</h1>
             </div>
             <base-btn x-large :to="{ name: 'Add Blog Post' }">
               <v-icon class="mr-3">mdi-plus-circle-outline</v-icon>
