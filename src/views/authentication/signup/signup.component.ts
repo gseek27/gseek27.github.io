@@ -51,5 +51,19 @@ export default class SignupComponent extends VueWrapper {
     } finally {
       new LoaderService().hideLinearLoader();
     }
+  },
+  googleLogin() {
+    const provider = new FirebaseService.auth.GoogleAuthProvider();
+
+    firebase
+      .auth()
+      .signInWithRedirect(provider)
+      .then(result => {
+        this.$router.go({ path: this.$router.path });
+        console.log(result);
+      })
+      .catch(err => {
+        alert("Oops. " + err.message);
+      });
   }
 }

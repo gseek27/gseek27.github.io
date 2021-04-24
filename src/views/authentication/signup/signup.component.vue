@@ -38,7 +38,7 @@
               </v-col>
               <v-col>
                 <div  @click="googleLogin">
-            <img class="googlelogo" alt="google logo" src="../assets/googlebtn4.png" />
+            <img class="googlelogo" alt="google logo" src="/googlebtn4.png" />
           </div>
               </v-col>
             </v-row>
