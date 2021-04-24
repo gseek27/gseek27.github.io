@@ -36,11 +36,9 @@
                   Signup
                 </base-btn>
               </v-col>
-              <v-col>
                 <div  @click="googleLogin">
-            <img class="googlelogo" alt="google logo" src="/googlebtn4.png" />
-          </div>
-              </v-col>
+                  <img class="googlelogo" alt="google logo" src="./googlebtn4.png" />
+                </div>
             </v-row>
           </base-form>
         </div>
