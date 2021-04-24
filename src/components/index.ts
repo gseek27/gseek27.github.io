@@ -7,10 +7,7 @@ import BaseCheckbox from './vuetify/Checkbox/base-checkbox';
 import BaseCheckboxGroup from './vuetify/CheckboxGroup/base-checkbox-group';
 import BaseCombobox from './vuetify/Combobox/base-combobox';
 import BaseDatePickerComponent from './vuetify/DatePicker/base-date-picker';
-<<<<<<< HEAD
 import BaseFileInput from './vuetify/FileInput/base-file-input';
-=======
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
 import BaseFormComponent from './vuetify/Form/base-form';
 import BaseMenu from './vuetify/Menu/base-menu';
 import BaseRadioGroup from './vuetify/RadioGroup/base-radio-group';
@@ -22,10 +19,7 @@ import BaseTooltip from './vuetify/Tooltip/base-tooltip';
 
 // Vuetify Components
 Vue.component('base-text-field', BaseTextField);
-<<<<<<< HEAD
 Vue.component('base-file-input', BaseFileInput);
-=======
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
 Vue.component('base-textarea', BaseTextarea);
 Vue.component('base-menu', BaseMenu);
 Vue.component('base-btn', BaseBtn);

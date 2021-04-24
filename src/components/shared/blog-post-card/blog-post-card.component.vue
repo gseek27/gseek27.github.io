@@ -24,13 +24,8 @@
     <v-spacer />
     <v-card-actions v-if="!$scopedSlots.footer">
       <v-list-item>
-<<<<<<< HEAD
         <v-list-item-avatar color="grey lighten-2" size="70">
           <v-img class="elevation-6" :src="post.User.PhotoUrl" contain />
-=======
-        <v-list-item-avatar>
-          <v-img class="elevation-6" src="/assets/images/user.png" />
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
         </v-list-item-avatar>
 
         <v-list-item-content>

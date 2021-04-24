@@ -1,13 +1,9 @@
 import VueWrapper from '@/components/core/Vue/vue.wrapper';
-<<<<<<< HEAD
 import { dummyImage } from '@/globals';
-=======
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
 import {
   CoreService,
   FirebaseService,
   LoaderService,
-<<<<<<< HEAD
   Session,
   SessionModel,
   SignupModel,
@@ -15,13 +11,6 @@ import {
 } from '@/sdk';
 import firebase from 'firebase/app';
 import { Component } from 'vue-property-decorator';
-=======
-  SignupModel,
-  UserModel
-} from '@/sdk';
-import { Component } from 'vue-property-decorator';
-import firebase from 'firebase/app';
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
 
 @Component
 export default class SignupComponent extends VueWrapper {
@@ -31,11 +20,7 @@ export default class SignupComponent extends VueWrapper {
 
   // Methods
   public async signup() {
-<<<<<<< HEAD
     const { Email, Password, DisplayName, File } = this.SignupData;
-=======
-    const { Email, Password, DisplayName } = this.SignupData;
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
     new LoaderService().showLinearLoader('Signing up...');
 
     try {
@@ -49,7 +34,6 @@ export default class SignupComponent extends VueWrapper {
       if (!user) {
         throw new Error('Something went wrong.');
       }
-<<<<<<< HEAD
       if (File) {
         const ref = this.FirebaseSrv.Storage.ref()
           .child(`profile-pics/${user.uid}.${File.name.split('.').pop()}`)
@@ -88,20 +72,6 @@ export default class SignupComponent extends VueWrapper {
 
         this.saveSession(user);
       }
-=======
-
-      await user.updateProfile({ displayName: DisplayName });
-
-      await this.FirebaseSrv.Db.collection('/users')
-        .doc(user.uid)
-        .set({
-          UserId: user.uid,
-          DisplayName: user.displayName,
-          Email: user.email
-        } as UserModel);
-
-      this.$router.push('/login');
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
     } catch (err) {
       new CoreService().showAlert(
         this.FirebaseSrv.getErrorMessage(err),
@@ -111,7 +81,6 @@ export default class SignupComponent extends VueWrapper {
       new LoaderService().hideLinearLoader();
     }
   }
-<<<<<<< HEAD
 
   public async thirdPartyLogin(type: 'google' | 'twitter' = 'google') {
     new LoaderService().showLinearLoader(`Signing up with ${type}...`);
@@ -174,6 +143,4 @@ export default class SignupComponent extends VueWrapper {
         PhotoUrl: photoURL ?? dummyImage
       } as UserModel);
   }
-=======
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
 }

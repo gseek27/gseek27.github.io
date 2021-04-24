@@ -7,16 +7,11 @@ import { Component } from 'vue-property-decorator';
 export default class ProfileComponent extends VueWrapper {
   // Properties
   public DisplayName = new Session().SessionValue!.DisplayName;
-<<<<<<< HEAD
   public PhotoUrl = new Session().SessionValue!.PhotoUrl;
   public File: File | null = null;
   public Password = '';
   private FirebaseSrv = new FirebaseService();
   public AddNewPic = false;
-=======
-  public Password = '';
-  private FirebaseSrv = new FirebaseService();
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
 
   // Services
   private LoaderService = new LoaderService();
@@ -43,7 +38,6 @@ export default class ProfileComponent extends VueWrapper {
         await this.FirebaseSrv.Auth.currentUser?.updatePassword(this.Password);
       }
 
-<<<<<<< HEAD
       if (this.File) {
         const ref = this.FirebaseSrv.Storage.ref()
           .child(
@@ -119,29 +113,6 @@ export default class ProfileComponent extends VueWrapper {
           'Your profile has been updated successfully!'
         );
       }
-=======
-      await Promise.all([
-        await this.FirebaseSrv.Auth.currentUser?.updateProfile({
-          displayName: this.DisplayName
-        }),
-        await this.FirebaseSrv.Db.collection('/users')
-          .doc(new Session().SessionValue?.Id)
-          .update({
-            DisplayName: this.DisplayName
-          })
-      ]);
-
-      new Session().Session.next({
-        ...new Session().SessionValue!,
-        DisplayName: this.DisplayName
-      });
-
-      new Session().save();
-
-      new CoreService().showAlert(
-        'Your profile has been updated successfully!'
-      );
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
     } catch (err) {
       new CoreService().showAlert(
         this.FirebaseSrv.getErrorMessage(err),

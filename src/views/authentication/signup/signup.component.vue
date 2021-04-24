@@ -32,7 +32,6 @@
                 />
               </v-col>
               <v-col cols="12">
-<<<<<<< HEAD
                 <base-file-input
                   :value.sync="SignupData.File"
                   label="Profile Picture"
@@ -40,13 +39,10 @@
                 />
               </v-col>
               <v-col cols="12">
-=======
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
                 <base-btn :disabled="invalid" block type="submit">
                   Signup
                 </base-btn>
               </v-col>
-<<<<<<< HEAD
               <v-col cols="12">
                 <div class="d-flex justify-space-evenly align-center flex-wrap">
                   <div @click="thirdPartyLogin" class="cursor-pointer">
@@ -60,11 +56,6 @@
                   </div>
                 </div>
               </v-col>
-=======
-                <div  @click="googleLogin">
-                  <img class="googlelogo" alt="google logo" src="./googlebtn4.png" />
-                </div>
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
             </v-row>
           </base-form>
         </div>

@@ -45,11 +45,7 @@ router.beforeEach((to, from, next) => {
   } else if (!isUserLoggedIn && isNonAuthRoute) {
     next();
   } else if (isUserLoggedIn && isNonAuthRoute) {
-<<<<<<< HEAD
     next({ name: 'Home' });
-=======
-    next({ name: 'Products' });
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
   } else if (!isUserLoggedIn && !isNonAuthRoute) {
     next({ name: 'Login' });
   } else {

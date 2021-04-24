@@ -27,7 +27,6 @@
               />
             </v-col>
             <v-col cols="12">
-<<<<<<< HEAD
               <h3>Current Photo</h3>
               <v-avatar color="grey lighten-2" size="70" class="mb-5">
                 <v-img :src="PhotoUrl" contain size="100" />
@@ -48,8 +47,6 @@
               />
             </v-col>
             <v-col cols="12">
-=======
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
               <base-btn :disabled="invalid" block type="submit">
                 Update Profile
               </base-btn>
@@ -62,4 +59,3 @@
 </template>
 
 <script lang="ts" src="./profile.component.ts" />
-0

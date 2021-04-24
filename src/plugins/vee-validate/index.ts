@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { extend, ValidationProvider } from 'vee-validate';
 import {
   confirmed,
@@ -11,20 +10,6 @@ import {
   size
 } from 'vee-validate/dist/rules';
 import Vue from 'vue';
-=======
-import Vue from 'vue';
-import { ValidationProvider, extend } from 'vee-validate';
-import {
-  required,
-  email,
-  max,
-  min,
-  confirmed,
-  size,
-  ext,
-  digits
-} from 'vee-validate/dist/rules';
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
 
 Vue.component('ValidationProvider', ValidationProvider);
 
@@ -78,11 +63,8 @@ extend('digits', {
   ...digits,
   message: 'The value must be in digits and exactly contain 8 digits'
 });
-<<<<<<< HEAD
 
 extend('image', {
   ...ext,
   message: 'The file must be an image (jpg/png/jpeg)'
 });
-=======
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3

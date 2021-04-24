@@ -28,7 +28,6 @@
                   Login
                 </base-btn>
               </v-col>
-<<<<<<< HEAD
               <v-col cols="12">
                 <div class="d-flex justify-space-evenly align-center flex-wrap">
                   <div @click="thirdPartyLogin" class="cursor-pointer">
@@ -42,8 +41,6 @@
                   </div>
                 </div>
               </v-col>
-=======
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
             </v-row>
           </base-form>
         </div>

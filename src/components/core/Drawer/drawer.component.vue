@@ -7,13 +7,8 @@
     class="app-bg-gradient big-shadow"
   >
     <div class="drawer-top py-5 text-center">
-<<<<<<< HEAD
       <v-avatar color="grey lighten-2" size="70">
         <v-img :src="UserSession.PhotoUrl" contain />
-=======
-      <v-avatar size="70">
-        <v-img src="/assets/images/user.png" />
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
       </v-avatar>
       <div />
       <v-badge color="success" dot offset-y="8" offset-x="-3">

@@ -22,12 +22,8 @@ export class Session {
     this.Session.next({
       Id: this.load('Id'),
       DisplayName: this.load('DisplayName'),
-<<<<<<< HEAD
       Email: this.load('Email'),
       PhotoUrl: this.load('PhotoUrl')
-=======
-      Email: this.load('Email')
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
     });
   }
   public save() {

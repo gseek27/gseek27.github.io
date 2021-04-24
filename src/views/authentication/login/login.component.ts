@@ -1,23 +1,15 @@
 import VueWrapper from '@/components/core/Vue/vue.wrapper';
-<<<<<<< HEAD
 import { dummyImage } from '@/globals';
-=======
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
 import {
   CoreService,
   FirebaseService,
   LoaderService,
   LoginModel,
   Session,
-<<<<<<< HEAD
   SessionModel,
   UserModel
 } from '@/sdk';
 import firebase from 'firebase/app';
-=======
-  SessionModel
-} from '@/sdk';
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
 import { Component } from 'vue-property-decorator';
 
 @Component
@@ -40,7 +32,6 @@ export default class LoginComponent extends VueWrapper {
         throw new Error('Something went wrong.');
       }
 
-<<<<<<< HEAD
       this.saveSession(user);
     } catch (err) {
       new CoreService().showAlert(
@@ -74,19 +65,6 @@ export default class LoginComponent extends VueWrapper {
       } else {
         throw new Error('Something went wrong.');
       }
-=======
-      const { displayName, email, uid } = user;
-      new Session().Session.next(
-        new SessionModel({
-          Id: uid,
-          DisplayName: displayName!,
-          Email: email!
-        })
-      );
-      new Session().save();
-
-      this.$router.push({ name: 'Home' });
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
     } catch (err) {
       new CoreService().showAlert(
         this.FirebaseSrv.getErrorMessage(err),
@@ -96,7 +74,6 @@ export default class LoginComponent extends VueWrapper {
       new LoaderService().hideLinearLoader();
     }
   }
-<<<<<<< HEAD
 
   public saveSession({ displayName, email, uid, photoURL }: firebase.User) {
     new Session().Session.next(
@@ -127,6 +104,4 @@ export default class LoginComponent extends VueWrapper {
         PhotoUrl: photoURL ?? dummyImage
       } as UserModel);
   }
-=======
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
 }

@@ -41,17 +41,12 @@
 
               <v-card-actions>
                 <v-list-item>
-<<<<<<< HEAD
                   <v-list-item-avatar size="70" color="grey lighten-2">
                     <v-img
                       class="elevation-6"
                       :src="BlogPost.User.PhotoUrl"
                       contain
                     />
-=======
-                  <v-list-item-avatar>
-                    <v-img class="elevation-6" src="/assets/images/user.png" />
->>>>>>> c0cca08596d4e7304c3e5c69f4a34a9188538bc3
                   </v-list-item-avatar>
 
                   <v-list-item-content>
