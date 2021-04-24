@@ -69,6 +69,7 @@
           <strong>
             © {{ new Date().getFullYear() }}
             <router-link to="/">&nbsp;🔥 It's Lit!</router-link>
+          </strong>
         </v-col>
       </v-row>
     </v-footer>
