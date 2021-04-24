@@ -1408,7 +1408,7 @@
     "@types/webpack" "^4"
     "http-proxy-middleware" "^1.0.0"
 
-"@types/webpack-env@^1.15.2":
+"@types/webpack-env@^1.15.2", "@types/webpack-env@^1.16.0":
   "integrity" "sha512-Fx+NpfOO0CpeYX2g9bkvX8O5qh9wrU1sOF4g8sft4Mu7z+qfe387YlyY8w8daDyDsKY5vUxM0yxkAYnbkRbZEw=="
   "resolved" "https://registry.npmjs.org/@types/webpack-env/-/webpack-env-1.16.0.tgz"
   "version" "1.16.0"
