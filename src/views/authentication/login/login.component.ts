@@ -11,7 +11,6 @@ import {
 } from '@/sdk';
 import firebase from 'firebase/app';
 import { Component } from 'vue-property-decorator';
-import router from 'src/router/index';
 
 @Component
 export default class LoginComponent extends VueWrapper {
