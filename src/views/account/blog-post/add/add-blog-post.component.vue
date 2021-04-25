@@ -9,18 +9,9 @@
         <base-form #default="{ invalid }" @submit="addBlogPost">
           <v-row dense>
             <v-col cols="12">
-              <base-text-field
-                label="Title"
-                autofocus
-                rules="required|min:10|max:50"
-                counter="50"
-                :value.sync="PostData.Title"
-              />
-            </v-col>
-            <v-col cols="12">
               <base-textarea
                 label="Post Body"
-                rules="required|max:5000|min:10"
+                rules="required|max:5000|min:1"
                 counter="5000"
                 :value.sync="PostData.PostBody"
               />
