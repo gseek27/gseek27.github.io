@@ -29,10 +29,10 @@
         </v-list-item-avatar>
 
         <v-list-item-content>
-          <v-list-item-title>{{ post.User.DisplayName }}</v-list-item-title>
+          <v-list-item-title>{{ post.User.DisplayName }} - </v-list-item-title>
         </v-list-item-content>
 
-        <div class="ml-auto subheading">{{ FromNow }}</div>
+        <div class="ml-auto subheading"> - ( {{ FromNow }} )</div>
       </v-list-item>
     </v-card-actions>
 

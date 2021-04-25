@@ -33,18 +33,13 @@
               <h1 class="primary--text" id="latest-posts"> Timeline</h1>
             </div>
 
-        
-
 
             <base-btn x-large :to="{ name: 'Add Blog Post' }">
               <v-icon class="mr-3">mdi-plus-circle-outline</v-icon>
               Add New Post
             </base-btn>
 
-
              
-          
-            
           </div>
           <div>
           <v-row class="d-flex flex-column-reverse blog-card-container">
@@ -80,7 +75,7 @@
         <v-col cols="12" class="py-5">
           <strong>
             © {{ new Date().getFullYear() }}
-            <router-link to="/">&nbsp;🔥 It's Lit!</router-link>
+            <router-link to="/"> 🔥 It's Lit!</router-link>
           </strong>
         </v-col>
       </v-row>
