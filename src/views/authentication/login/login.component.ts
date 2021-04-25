@@ -46,7 +46,7 @@ export default class LoginComponent extends VueWrapper {
   public async thirdPartyLogin(type: 'google' | 'twitter' = 'google') {
     new LoaderService().showLinearLoader('Signing up with Google...');
     try {
-      const { user } = await this.FirebaseSrv.Auth.signInWithPopup(
+      const { user } = await this.FirebaseSrv.Auth.signInWithRedirect(
         new firebase.auth[
           type === 'twitter' ? 'TwitterAuthProvider' : 'GoogleAuthProvider'
         ]()
