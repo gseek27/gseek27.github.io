@@ -15,12 +15,12 @@ export class FirebaseService {
 
   constructor() {
     this.App = firebase.initializeApp({
-      apiKey: 'AIzaSyD-9pSQ8z8lVTI7gvYcMgaHhzuzStGQb1g',
-      authDomain: 'its-lit-app.firebaseapp.com',
-      projectId: 'its-lit-app',
-      storageBucket: 'its-lit-app.appspot.com',
-      messagingSenderId: '485487673473',
-      appId: '1:485487673473:web:60caa2a9c9daddd6f98d80'
+      apiKey: 'AIzaSyAzCyrbfIqZxduw6uAHQ8radUPdxb3O5PU',
+      authDomain: 'itslit-a4408.firebaseapp.com',
+      projectId: 'itslit-a4408',
+      storageBucket: 'itslit-a4408.appspot.com',
+      messagingSenderId: '20427553503',
+      appId: '1:20427553503:web:4e8679a99c852622c3876a'
     });
     this.Db = this.App.firestore();
     this.Auth = this.App.auth();
