@@ -8,7 +8,7 @@ interface CookiesOption {
 }
 
 export class CookieBrowser {
-  private Prefix = '$its-lit-app$';
+  private Prefix = '$itslit-a4408$';
 
   public get(key: string): string | null {
     const value = '; ' + document.cookie;
