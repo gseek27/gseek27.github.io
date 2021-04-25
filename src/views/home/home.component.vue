@@ -28,22 +28,33 @@
     <v-container>
       <v-row class="ma-0">
         <v-col cols="12">
-          <div class="d-flex justify-space-between align-center mb-10">
+          <div class="d-flex justify-space-around align-center mb-10">
             <div>
-              <h1 class="primary--text" id="latest-posts">Timeline</h1>
+              <h1 class="primary--text" id="latest-posts"> Timeline</h1>
             </div>
+
+        
+
+
             <base-btn x-large :to="{ name: 'Add Blog Post' }">
               <v-icon class="mr-3">mdi-plus-circle-outline</v-icon>
               Add New Post
             </base-btn>
+
+
+             
+          
+            
           </div>
-          <v-row class="blog-card-container">
+          <div>
+          <v-row class="d-flex flex-column-reverse blog-card-container">
             <v-col
               cols="12"
-              sm="6"
-              lg="4"
+              sm="12"
+              lg="12"
               v-for="(post, i) in BlogPostSrv.BlogPosts.value"
               :key="i"
+              class="d-flex justify-center"
             >
               <blog-post-card-component
                 :class="i % 2 === 0 ? 'primary' : 'primary'"
@@ -60,6 +71,7 @@
               <h1 class="headline text-center">No Posts found</h1>
             </v-col>
           </v-row>
+          </div>
         </v-col>
       </v-row>
     </v-container>
