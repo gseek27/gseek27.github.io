@@ -1,10 +1,10 @@
-export class SessionModel {
-  public Id = '';
+export class SignupModel {
   public DisplayName = '';
   public Email = '';
-  public PhotoUrl = '';
+  public Password = '';
+  public File: File | null = null;
 
-  constructor(data?: Partial<SessionModel>) {
+  constructor(data?: Partial<SignupModel>) {
     Object.assign(this, data);
   }
 }
